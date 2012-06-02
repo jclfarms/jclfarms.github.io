@@ -8,7 +8,9 @@ body
   div.topbar
     ul
       li
-        <a href='!{base_url}/info'>Information</a>
+        - each article in articles
+          case article.title
+            when "Information":<a href='!{base_url}/!{article.url}/'>!{article.title}</a>
       li
         - each article in articles
           case article.title
