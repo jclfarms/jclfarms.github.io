@@ -10,7 +10,10 @@ body
       li
         <a href='!{base_url}/info'>Information</a>
       li
-        <a href='!{base_url}/contact'>Contact</a>
+        - each article in articles
+          case article.title
+            when "Contact":<a href='!{base_url}/!{article.url}/'>!{article.title}</a>
+
   div.blog_title
     <a href='!{base_url}/'>!{title}</a>
   - each article in articles
