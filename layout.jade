@@ -6,15 +6,6 @@ head
   link(rel='alternate', type='application/rss+xml', title=title, href=base_url + '/rss.xml')
 body
   div.topbar
-    ul
-      li
-        - each article in articles
-          case article.title
-            when "Information":<a href='!{base_url}/!{article.url}/'>!{article.title}</a>
-      li
-        - each article in articles
-          case article.title
-            when "Contact":<a href='!{base_url}/!{article.url}/'>!{article.title}</a>
 
   div.blog_title
     <a href='!{base_url}/'>!{title}</a>
