@@ -1,0 +1,11 @@
+# Site settings
+title: JCLFARMS
+email: jimmy@jclfarms.com
+description: ""
+baseurl: ""
+url: "http://www.jclfarms.com"
+twitter_username: jclfarms
+
+# Build settings
+markdown: kramdown
+permalink: pretty
